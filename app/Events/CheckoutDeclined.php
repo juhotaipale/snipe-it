@@ -11,11 +11,6 @@ class CheckoutDeclined
 {
     use Dispatchable, SerializesModels;
 
-    /**
-     * Create a new event instance.
-     *
-     * @return void
-     */
     public function __construct(CheckoutAcceptance $acceptance)
     {
         $this->acceptance = $acceptance;
